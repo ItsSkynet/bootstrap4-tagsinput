@@ -3,24 +3,24 @@ Bootstrap Tags Input is a jQuery plugin providing a Twitter Bootstrap user inter
 
 
 ## Usage
-var objectArr = [name: "someData", name: "someData2"];
+    var objectArr = [name: "someData", name: "someData2"];
 
-var blood = new Bloodhound({
-  datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
-  queryTokenizer: Bloodhound.tokenizers.whitespace,
-  local: contactBookComposite
-});
+    var blood = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+      queryTokenizer: Bloodhound.tokenizers.whitespace,
+      local: contactBookComposite
+    });
 
-$('#id').tagsinput({
-  itemValue: 'name',
-  itemText: 'name',
-  typeaheadjs: {
-    name: 'input.name',
-    displayKey: 'name',
-    valueKey: 'name',
-    source: blood.ttAdapter()
-  }
-});
+    $('#id').tagsinput({
+      itemValue: 'name',
+      itemText: 'name',
+      typeaheadjs: {
+        name: 'input.name',
+        displayKey: 'name',
+        valueKey: 'name',
+        source: blood.ttAdapter()
+      }
+    });
 
 ## Features
 * Objects as tags
