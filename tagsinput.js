@@ -1,5 +1,5 @@
 /*
- * bootstrap-tagsinput v0.8.0
+ * bootstrap-tagsinput - Maintained by ItsSkynet V1.0.0
  * 
  */
 
@@ -491,9 +491,9 @@
             }
 
             // If the field is empty, let the event triggered fire as usual
-            /*if (self.options.cancelConfirmKeysOnEmpty === false) {
+            if (self.options.cancelConfirmKeysOnEmpty !== false) {
                 event.preventDefault();
-            }*/
+            }
          }
 
          // Reset internal input's size
