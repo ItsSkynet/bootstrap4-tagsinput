@@ -491,9 +491,9 @@
             }
 
             // If the field is empty, let the event triggered fire as usual
-            if (self.options.cancelConfirmKeysOnEmpty === false) {
+            /*if (self.options.cancelConfirmKeysOnEmpty === false) {
                 event.preventDefault();
-            }
+            }*/
          }
 
          // Reset internal input's size
